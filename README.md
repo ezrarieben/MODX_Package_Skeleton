@@ -71,8 +71,8 @@ $manager->createObjectContainer('[main class name]'); // created the database ta
     1. System Menu > Namespaces
     2. Create a new namespace
     3. Set the "namespace" field to your desired namespace
-    4. Set the "Core path" field to the absolute path of your package core (e.g. /var/www/html/dev/packages/MODX_SamplePackage/core/)
-    5. Set the "Assets path" field to the absolute path of your package assets (e.g. /var/www/html/dev/packages/MODX_SamplePackage/assets/)
+    4. Set the "Core path" field to the absolute path of your package core (e.g. /var/www/html/dev/packages/MODX_SamplePackage/core/components/samplepackage/)
+    5. Set the "Assets path" field to the absolute path of your package assets (e.g. /var/www/html/dev/packages/MODX_SamplePackage/assets/components/samplepackage/)
 2. Go to your _build folder and copy the build.transport.config.sample.php file and name the copy build.transport.config.php
 ```bash
 $ cd [path to _build]
