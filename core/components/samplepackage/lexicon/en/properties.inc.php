@@ -7,4 +7,4 @@
 * @namespace egovolution
 */
 
-$_lang[‘samplepackage’] = ‘Sample Package’;
+$_lang['samplepackage'] = 'Sample Package';
