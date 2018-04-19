@@ -67,7 +67,13 @@ $manager->createObjectContainer('[main class name]'); // created the database ta
 ```
 4. Execute the build.schema.php script through your browser
 ### Generating a transport package
-1. Go to your _build folder and copy the build.transport.config.sample.php file and name the copy build.transport.config.php
+1. Create a new namespace
+    1. System Menu > Namespaces
+    2. Create a new namespace
+    3. Set the "namespace" field to your desired namespace
+    4. Set the "Core path" field to the absolute path of your package core (e.g. /var/www/html/dev/packages/MODX_SamplePackage/core/)
+    5. Set the "Assets path" field to the absolute path of your package assets (e.g. /var/www/html/dev/packages/MODX_SamplePackage/assets/)
+2. Go to your _build folder and copy the build.transport.config.sample.php file and name the copy build.transport.config.php
 ```bash
 $ cd [path to _build]
 $ cp build.transport.config.sample.php build.transport.config.php
@@ -76,7 +82,7 @@ $ cp build.transport.config.sample.php build.transport.config.php
 ```php
 define('MODX_BASE_PATH', '[absolute path to modx installation]');
 ```
-2. Open the build.transport.php file and change lines 3, 13 + 14 to fit your needs
+4. Open the build.transport.php file and change lines 3, 13 + 14 to fit your needs
 ```php
 $pkg_name = '[camel case package name]';
 ```
@@ -84,5 +90,5 @@ $pkg_name = '[camel case package name]';
 $pkg_version = '[version]';
 $pkg_release = '[dev|alpha|beta|rc etc.]';
 ```
-3. Execute the build.transport.php script through your browser
-4. Navigate to: MODX Core Directory > Packages. You'll find a freshly generated transport package for your extra.
+5. Execute the build.transport.php script through your browser
+6. Navigate to: MODX Core Directory > Packages. You'll find a freshly generated transport package for your extra.
