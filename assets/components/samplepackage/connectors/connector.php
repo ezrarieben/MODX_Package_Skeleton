@@ -19,7 +19,7 @@ require_once MODX_CONNECTORS_PATH.'index.php';
 
 $corePath = $modx->getOption('samplepackage.core_path',null,$modx->getOption('core_path').'components/samplepackage/');
 
-require_once $corePath.'model/calendarium/samplepackage.class.php';
+require_once $corePath.'model/samplepackage/samplepackage.class.php';
 
 $modx->samplepackage = new SamplePackage($modx);
 $modx->lexicon->load('samplepackage:default');
@@ -30,7 +30,7 @@ if (defined('MODX_REQP') && MODX_REQP === false) {
 }
 
 // Handle request
-$path = $modx->calendarium->getOption('processorsPath', $modx->samplepackage->options, $corePath.'processors/');
+$path = $modx->samplepackage->getOption('processorsPath', $modx->samplepackage->options, $corePath.'processors/');
 $modx->request->handleRequest(array(
     'processors_path' => $path,
     'location' => '',
