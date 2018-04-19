@@ -7,7 +7,7 @@ $action->fromArray(array(
   'id' => 1,
   'namespace' => NAMESPACE_NAME,
   'parent' => 0,
-  'controller' => 'controllers/mgr/indexpanel',
+  'controller' => 'controllers/mgr/index',
   'haslayout' => true,
   'lang_topics' => NAMESPACE_NAME.':default',
   'assets' => '',
