@@ -38,7 +38,7 @@ $ chmod -R 755 [dev folder path]
 1. Create the following system settings
 ```
 [namespace].core_path [absolute path to your package core eg: /var/www/html/dev/packages/MODX_SamplePackage/core/components/samplepackage/]
-[namespace].assets_url  [absolute path to your package assets eg: /var/www/html/dev/packages/MODX_SamplePackage/assets/components/samplepackage/]
+[namespace].assets_url  [relative path to your package assets eg: /dev/packages/MODX_SamplePackage/assets/components/samplepackage/]
 ```
 2. Adding the CMP
     1. System menu > Menus > Create Menu
