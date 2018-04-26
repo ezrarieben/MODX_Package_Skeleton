@@ -18,7 +18,7 @@ class SamplePackage
         $basePath = $this->getOption('core_path', $options, $this->modx->getOption('core_path').'components/'.$this->namespace.'/');
         $assetsUrl = $this->getOption('assets_url', $options, $this->modx->getOption('assets_url').'components/'.$this->namespace.'/');
         $this->options = array_merge(array(
-                  'namespace' => $this->namespace,
+            'namespace' => $this->namespace,
             'basePath' => $basePath,
             'corePath' => $basePath,
             'modelPath' => $basePath.'model/',
@@ -28,7 +28,7 @@ class SamplePackage
             'jsUrl' => $assetsUrl.'js/',
             'cssUrl' => $assetsUrl.'css/',
             'assetsUrl' => $assetsUrl,
-            'connectorUrl' => $assetsUrl.'connector.php',
+            'connectorUrl' => $assetsUrl.'connectors/connector.php',
         ), $options);
 
         $this->modx->addPackage($this->namespace, $this->options['modelPath']);
