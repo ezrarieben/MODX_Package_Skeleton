@@ -5,7 +5,7 @@ class SamplePackageGetListProcessor extends modObjectGetListProcessor
     public $languageTopics = array('samplepackage:default');
     public $defaultSortField = 'id';
     public $defaultSortDirection = 'ASC';
-    public $objectType = 'samplepackage.entry';
+    public $objectType = 'samplepackage.samplepackage';
 
     public function prepareQueryBeforeCount(xPDOQuery $c)
     {
