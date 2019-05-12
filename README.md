@@ -40,10 +40,16 @@ $ chmod -R 755 [dev folder path]
 [namespace].core_path [absolute path to your package core eg: /var/www/html/dev/packages/MODX_SamplePackage/core/components/samplepackage/]
 [namespace].assets_url  [relative path to your package assets eg: /dev/packages/MODX_SamplePackage/assets/components/samplepackage/]
 ```
+2. Create a namespace with the following values
+```
+Name: [namespace]
+Core path: [absolute path to your package core eg: /var/www/html/dev/packages/MODX_SamplePackage/core/components/samplepackage/]
+Assets path: [absolute path to your package assets eg: /var/www/html/dev/packages/MODX_SamplePackage/assets/components/samplepackage/]
+``` 
 3. Changing the MODX Session path
     1. System menu > System settings
     2. Set the `session_cookie_path` option to `/`
-2. Adding the CMP
+4. Adding the CMP
     1. System menu > Menus > Create Menu
     2. Set the "Lexicon Key" to your package name
     3. Set the "Action" to index
